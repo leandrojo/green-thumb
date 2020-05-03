@@ -1,0 +1,30 @@
+@import '../App.scss';
+
+$color: #A8A8A8;
+
+.select {
+  background-color: transparent;
+  border: none;
+  color: $color;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  box-sizing: border-box;
+  margin: 0 10px;
+  outline: none;
+  height: 40px;
+  width: calc(100% - 20px);
+
+  --webkit-appearance: none;
+  appearance: none;
+
+  &:-moz-focusring {
+    color: transparent;
+  }
+
+  &__wrapper {
+    border: thin solid $color;
+    border-radius: 19px;
+  }
+}

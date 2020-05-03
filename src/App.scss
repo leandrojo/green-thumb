@@ -1,0 +1,51 @@
+$gray--Light: #A9A9A9;
+$gray: #797979;
+$gray--ExtraDark: #0B2A1E;
+$primary: #257556;
+
+$fontFamily: "MontSerrat", sans-serif;
+
+$container--width: 868px;
+
+@mixin sm {
+  @media (max-width: 368px) {
+      @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: 768px) {
+      @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: 910px) {
+      @content;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $container--width;
+  width: calc(100% - 80px);
+}
+
+.block {
+  background-color: #F2F2F2;
+}
+
+.title {
+  color: $gray--ExtraDark;
+  font-family: $fontFamily;
+  font-size: 55px;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+}
+
+body {
+  font-family: $fontFamily;
+  margin: 0;
+
+  --container--width: 868px;
+}

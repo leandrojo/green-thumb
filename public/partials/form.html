@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <template id="template-form">
+      <form class="form">
+        <div class="field">
+          <div class="field__imageWrapper">
+            <img class="field__image" src="/assets/sun.png" alt="" />
+          </div>
+          <span><b>1.</b> Set the amount of <b>sunlight</b> your plant will get.</span>
+
+          <div class="select__wrapper">
+            <select class="select" name="sun">
+              <option disabled selected value>Select...</option>
+              <option value="high">High</option>
+              <option value="low">Low</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field__imageWrapper">
+            <img class="field__image" src="/assets/wateringcan.png" alt="" />
+          </div>
+          <span><b>2.</b> How often do you want to <b>water</b> your plant?</span>
+
+          <div class="select__wrapper">
+            <select class="select" name="water">
+              <option disabled selected value>Select...</option>
+              <option value="daily">Daily</option>
+              <option value="regularly">Regularly</option>
+              <option value="rarely">Rarely</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field__imageWrapper">
+            <img class="field__image" src="/assets/dog.png" alt="" />
+          </div>
+          <span><b>3.</b> Do you have pets? Do they <b>chew</b> plants?</span>
+
+          <div class="select__wrapper">
+            <select class="select" name="pets">
+              <option disabled selected value>Select...</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </template>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,39 @@
+@import '../../../App.scss';
+
+.item {
+  background-color: white;
+  border-radius: 5px;
+  padding: 12px 32px 32px;
+
+  &--name {
+    color: $primary;
+    font-family: $fontFamily;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &--price {
+    color: $primary;
+    font-family: $fontFamily;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &--meta {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  &--icons {
+    display: flex;
+    flex: 0;
+  }
+
+  &--icon {
+    flex: 1;
+    height: 28px;
+    padding: 3px;
+  }
+}

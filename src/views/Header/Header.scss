@@ -1,0 +1,8 @@
+@import '../../App.scss';
+
+.header {
+  @extend .container;
+
+  background-color: white;
+  margin-top: 56px;
+}

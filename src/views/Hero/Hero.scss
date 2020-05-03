@@ -1,0 +1,23 @@
+@import '../../App.scss';
+
+.hero {
+  @extend .container;
+
+  margin-top: 38px;
+
+  &--title {
+    @extend .title;
+
+    margin: 0;
+    width: 530px;
+  }
+}
+
+@include lg {
+  .hero {
+    &--title {
+      font-size: 40px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../App.scss';
+
+.form {
+  @extend .container;
+
+  column-gap: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 48px;
+  padding-bottom: 83px;
+}
+
+.field {
+  span {
+    color: $gray;
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 6px 0 20px;
+  }
+
+  &__imageWrapper {
+    align-items: center;
+    display: flex;
+    height: 90px;
+    max-height: 90px;
+  }
+}
+
+@include lg {
+  .form {
+    column-gap: 50px;
+  }
+
+  .field {
+    justify-content: space-between;
+  }
+}
+
+@include md {
+  .form {
+    column-gap: 50px;
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+  }
+
+  .field {
+    justify-content: space-between;
+    margin-bottom: 50px;
+    max-width: 240px;
+  }
+}
