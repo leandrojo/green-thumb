@@ -8,7 +8,6 @@
     "forceConsistentCasingInFileNames": true,
     "listEmittedFiles": true,
     "listFiles": false,
-    // "module": "commonjs",
     "moduleResolution": "node",
     "noEmitOnError": true,
     "noImplicitAny": true,
